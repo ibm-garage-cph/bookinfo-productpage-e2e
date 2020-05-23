@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
-    "test:local": "cypress open"
+    "test:local": "CYPRESS_HOST='http://localhost:9080' cypress open"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ibm-garage-cph/bookinfo-productpage-e2e/issues"
   },
-  "homepage": "https://github.com/ibm-garage-cph/bookinfo-productpage-e2e#readme"
+  "homepage": "https://github.com/ibm-garage-cph/bookinfo-productpage-e2e#readme",
+  "devDependencies": {
+    "cypress": "^4.5.0"
+  }
 }
