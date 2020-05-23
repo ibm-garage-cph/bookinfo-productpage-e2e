@@ -1,12 +1,12 @@
 apiVersion: tekton.dev/v1alpha1
 kind: Task
 metadata:
-  name: test-nodejs
+  name: cypress
 spec:
-  inputs:
-    params:
-      - name: URL
-        description: The base url which you want to test
+  # inputs:
+  #   params:
+  #     - name: URL
+  #       description: The base url which you want to test
   steps:
     - name: E2E Test
       image: cypress/included:4.6.0
